@@ -7,4 +7,5 @@ window.onload = sticky;
     window.addEventListener("scroll", function (){
         header.classList.toggle("sticky", window.scrollY > 0);
     });
+
 }

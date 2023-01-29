@@ -169,6 +169,10 @@ header.sticky{
 	align-items: center;
 	cursor: pointer;
 }
+
+.container-img img{
+    width: 105px;
+}
 .container-box{
 	display: flex;
 	align-items: center;
@@ -354,5 +358,114 @@ header.sticky{
     font-size: var(--p-font);
     font-weight: 400;
     letter-spacing: 1px;
+}
+
+.cta-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	align-items: center;
+}
+
+.about-img{
+    width: 100%;
+    height: auto;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.about-text h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-text h5{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.footer{
+    padding: 60px 13%;
+    background: var(--bg-color);
+}
+
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+
+.footer-content img{
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-content li{
+    margin-bottom: 18px;
+
+}
+
+.footer-content li a{
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover{
+	transform: translateX(10px);
+	color: var(--main-color);
+}
+
+.last-text{
+    text-align: center;
+    padding: 18px;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main-footer{
+    border-top: 1px solid var(--main-color);
+    padding-top: 30px;
+}
+
+#loginb{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: #121212;
+}
+
+#loginb a{
+    color: #121212;
+}
+
+#loginb:hover{
+	transform: scale(0.95) translateY(-2px);
 }
 
