@@ -235,7 +235,6 @@ header.sticky{
 	padding: 25px 60px;
 	border: 1px solid var(--main-color);
 	border-radius: 20px;
-    
     box-shadow: -11.729px -11.729px 32px rgba(124, 124, 124, 0.15);
 	transition: all .40s ease;
 }
@@ -297,6 +296,7 @@ header.sticky{
     border-radius: 20px;
     box-shadow: -10.729px -10.729px 32px rgba(124, 124, 124, 0.15);
     transition: all .40s ease;
+    cursor: pointer;
 }
 
 .row:hover{
@@ -376,33 +376,33 @@ header.sticky{
 	align-items: center;
 }
 
-.about-img{
-    width: 100%;
-    height: auto;
+.about-img img{
+	width: 100%;
+	height: auto;
 }
 
 .about-text h2{
-    font-size: var(--h2-font);
-    line-height: 1.2;
-    margin-bottom: 20px;
+	font-size: var(--h2-font);
+	line-height: 1.2;
+	margin-bottom: 20px;
 }
 
 .about-text p{
-    font-size: var(--p-font);
-    color: var(--second-color);
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 30px;
+	font-size: var(--p-font);
+	color: var(--second-color);
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 30px;
 }
 
 .about-text h4{
-    font-size: 20px;
-    margin-bottom: 10px;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .about-text h5{
-    font-size: 20px;
-    margin-bottom: 40px;
+	font-size: 20px;
+	margin-bottom: 40px;
 }
 
 .footer{
@@ -468,4 +468,320 @@ header.sticky{
 #loginb:hover{
 	transform: scale(0.95) translateY(-2px);
 }
+
+@media (max-width: 1410px){
+    header{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+
+    header.sticky{
+        padding: 12px 3%;
+        transition: .2s;
+    }
+
+    section{
+        padding: 70px 5%;
+        transition: .2s;
+    }
+
+    .home-text h1{
+        font-size: 2.8rem;
+    }
+    
+    .home-text p{
+        font-size: 1rem;
+    }
+
+    .home-img img{
+        width: 90%;
+        padding-left: 40px;
+    }
+
+    .container{
+        padding: 70px 5%;
+        transition: .2s;
+    }
+
+    .container-box{
+        padding: 10px 20px;
+    }
+
+    .container-img img{
+        width: 90px;
+    }
+
+    #hide{
+       display: none;
+    }
+
+    .center-text h2{
+        font-size: 2rem;
+    }
+
+    .categories-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+    
+    .box img{
+        width: 100px;
+    }
+    
+    .courses-content{
+        gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+     }
+      
+     .row img{
+         width: 100%;
+         height: 250px;
+     }
+     
+     .courses-text{
+         padding: 25px 20px;
+     }
+     
+     .courses-text h5{
+         font-size: 14px;
+     }
+     
+     .courses-text h3{
+         font-size: 18px;
+     }
+ 
+     .courses-text h6{
+          font-size: 1rem;
+          margin-bottom: 20px;
+     }
+     
+     .star i{
+         font-size: 14px;
+     }
+     
+     .review{
+         font-size: 14px;
+     }
+
+     .footer{
+        padding: 70px 3%;
+        transition: .2s;
+     }
+
+     .btn{
+        padding: 12px 26px;
+        font-size: 1rem;
+    }
+
+    .about-text h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .about-text p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .about-text h4{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .about-text h5{
+        font-size: 16px;
+        margin-bottom: 40px;
+    } 
+}
+
+@media (max-width: 1312px){
+    .cta-content{
+        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+        gap: 1.2rem;
+    }
+}
+
+@media(max-width: 1223px){
+    .courses-content{
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+     }
+      
+     .row img{
+         width: 100%;
+         height: 250px;
+     }
+}
+
+
+@media (max-width: 1094px){
+	
+    .home-text h1{
+        font-size: 2.3rem;
+    }
+    
+    .home-text p{
+        font-size: 0.8rem;
+    }
+
+
+    .courses-content{
+        grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+     }
+
+     .cta-content{
+        grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+        gap: 1.2rem;
+    }
+}
+
+@media(max-width: 1054px){
+    #hide{
+        display:flex
+    }
+}
+
+@media(max-width: 1038px){
+    .courses-content{
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+     }
+}
+
+@media (max-width: 1025px){
+    .box{
+        padding: 15px 30px;
+    }
+	#menu-icon{
+		display: block;
+	}
+    
+	.navbar{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 300px;
+		height: 110vh;
+		background: var(--main-color);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 170px 30px;
+		transition: all .40s ease;
+	}
+	.navbar a{
+		display: block;
+		margin: 1.3rem 0;
+		color: var(--bg-color);
+	}
+	.navbar a:hover{
+		color: var(--bg-color);
+		transform: translateY(-5px);
+	}
+	.navbar.open{
+		right: 0;
+	}
+}
+
+@media(max-width: 973px){
+
+    .cta-content img{
+        width: 90px;
+    }
+    .cta-content{
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    }
+    .categories-content{
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    }
+    .box img{
+        width: 100px;
+    }
+
+    .home-text h1{
+        font-size: 1.8rem;
+    }
+    
+    .home-text p{
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media (max-width: 890px){
+	.home{
+        text-align: center;
+		height: 100vh;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+        margin-bottom: 20%;
+	}
+	.home-text{
+        text-align: center;
+		padding-top: 20px;
+	}
+
+    .latter{
+        display: none;
+    }
+	.home-img{
+        padding-top: 3%;
+        padding-left: 15%;
+        width: 85%;
+		text-align: center;
+	}
+	.home-img img{
+		height: auto;
+		width: 100%;
+	}
+	.about{
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+    .about-img{
+        width: 85%;
+        padding-left: 15%;
+    }
+
+    .about-text{
+        text-align: center;
+    }
+}
+
+@media(max-width:774px){
+    .categories-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:700px){
+    .courses-content{
+        grid-template-columns: repeat(1, minmax(170px, 400px));
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+   
+}
+
+@media(max-width:627px){
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media (max-width: 600px){
+	.home{
+		height: 65vh;
+	}
+}
+
+
 
