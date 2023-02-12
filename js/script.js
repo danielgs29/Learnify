@@ -22,9 +22,13 @@ window.onload = sticky;
     } 
 
     let cursos=document.querySelectorAll(".row");
-    cursos[0].onclick=()=>{
-        location.href="curso.html";
-        localStorage.setItem("varia",0);
+    for (let element of cursos) {
+        element.addEventListener("click", () => {
+            sessionStorage.clear();
+            location.href="curso.html";
+            sessionStorage.setItem("titulo",element.querySelector("h3").textContent);
+        });
+      }
+      
     }
-
-}
+     

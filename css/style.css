@@ -763,9 +763,22 @@ header.sticky{
 }
 @media(max-width:700px){
     .courses-content{
-        grid-template-columns: repeat(1, minmax(170px, 400px));
+        grid-template-columns:  repeat(1, 1fr);
         padding-left: 20%;
         padding-right: 20%;
+    }
+    
+    .courses-text h3 h5 h6{
+        line-height: normal;
+    }
+    .courses-text{
+        padding: 2px 10px;
+    }
+    .row img{
+        height: 200px;
+    }
+   .about-text h2{
+        font-size: 26px;
     }
    
 }
@@ -779,7 +792,13 @@ header.sticky{
 
 @media (max-width: 600px){
 	.home{
-		height: 65vh;
+		height: 100vhh;
+	}
+}
+
+@media (max-width: 400px){
+	.home{
+		height: 65vhh;
 	}
 }
 
