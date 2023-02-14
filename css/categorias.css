@@ -34,7 +34,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:center;
 }
 .category-title{
     flex: 0 0 calc(16.6667% - 10px);
@@ -70,11 +70,11 @@
 /***************/
 @media(max-width: 774px){
     .posts-main-container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .categories-content{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

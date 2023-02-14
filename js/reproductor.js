@@ -41,27 +41,27 @@ function cargarVideos() {
        videos = [
         {
           src: "https://www.youtube.com/embed/QC9_8nRNNHA",
-          title: "1 Introduccion",
+          title: "1. Introduccion",
         },
         {
           src: "https://www.youtube.com/embed/CdfMG_Qy00E",
-          title: "2 Conceptos basicos",
+          title: "2. Conceptos basicos",
         },
         {
           src: "https://www.youtube.com/embed/F-cDjBkSRT4",
-          title: "3 Etiquetas",
+          title: "3. Etiquetas",
         },
         {
           src: "https://www.youtube.com/embed/Wjgv2GJUe2I",
-          title: "4 Estructura del cuerpo",
+          title: "4. Estructura del cuerpo",
         },
         {
           src: "https://www.youtube.com/embed/23U19omettA",
-          title: "5 Etiqueta fig y figCapture",
+          title: "5. Etiqueta fig y figCapture",
         },
         {
           src: "https://www.youtube.com/embed/F-cDjBkSRT4",
-          title: "6 Modelo Caja Contenedor",
+          title: "6. Modelo Caja Contenedor",
         },
       ];
     }
@@ -70,14 +70,95 @@ function cargarVideos() {
        videos = [
         {
           src: "https://www.youtube.com/embed/m2o-eeqwgkQ",
-          title: "1 Introduccion a js",
+          title: "1. Introduccion a js",
         },
         {
           src: "https://www.youtube.com/embed/HwJC6vo2q5w",
-          title: "2 Concejos Iniciales",
+          title: "2. Concejos Iniciales",
         },
+        {
+          src: "https://www.youtube.com/embed/wwkKXhOAgqo",
+          title: "3.Unir Html y js",
+        },
+        {
+          src: "https://www.youtube.com/embed/uhqrupAZchU",
+          title: "4. Rutas Absolutas",
+        },
+        {
+          src: "https://www.youtube.com/embed/Iwiwl2ySwx8",
+          title: "5. Variables y constantes",
+        },
+        {
+          src: "https://www.youtube.com/embed/Iwiwl2ySwx8",
+          title: "6. Datos Primitivos",
+        }
       ];
     }
+
+    if (value == "Curso De Marketing Digital") {
+      videos = [
+       {
+         src: "https://www.youtube.com/embed/ZSkZs_OtkkQ",
+         title: "1. Que es Marketing",
+       },
+       {
+         src: "https://www.youtube.com/embed/dWzjtGet1fg",
+         title: "2. Que es la publicidad",
+       },
+       {
+        src: "https://www.youtube.com/embed/RPndJZgp0Jk",
+        title: "3. Tipos de Marketing",
+      },
+     ];
+   }
+
+   if (value == "Curso De Docker") {
+    videos = [
+     {
+       src: "https://www.youtube.com/embed/5z2kYFG3OfY",
+       title: "1. Presentación",
+     },
+     {
+       src: "https://www.youtube.com/embed/N9vesm4bGHE",
+       title: "2. Entorno de Desarrollo",
+     },
+     {
+      src: "https://www.youtube.com/embed/EU6kjP31EO8",
+      title: "Docker y DevOps",
+    },
+   ];
+ }
+
+ if (value == "Curso De Node js") {
+  videos = [
+   {
+     src: "https://www.youtube.com/embed/e8n_9N-ZyFE",
+     title: "1. Que es Node js",
+   },
+   {
+     src: "https://www.youtube.com/embed/_2VHVIJCtGk",
+     title: "2. Global Vs Window",
+   }
+ ];
+}
+
+    if (value == "Curso De Photoshop Avanzado") {
+      videos = [
+       {
+         src: "https://www.youtube.com/embed/BsHUVgl1Zhc",
+         title: "1. Abrir Imagenes en Photoshop",
+       },
+       {
+         src: "https://www.youtube.com/embed/c2xY62gM6I0",
+         title: "2. El espacio de trabajo",
+       },
+       {
+        src: "https://www.youtube.com/embed/yOKMkrC7n78",
+        title: "3. Las Capas en Photoshop",
+      },
+     ];
+   }
+
     mainVideo.src=videos[0].src
     title.textContent=videos[0].title
     let contador=0;
