@@ -22,26 +22,26 @@
 
     <!------------- Header------------------------------>
     <header>
-        <a href="index.html" class="logo">
-            <img src="img/img/logo.svg" alt="logo">
+        <a href="index.html" class="logo" role="link">
+            <img src="img/img/logo.svg" alt="logo" role="img" aria-label="logo de la página">
         </a>
-
-        <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li><a href="categorias.html">Cursos</a></li>
-            <li id="loginb"><a href="login.html">Login</a></li>
+        
+        <ul class="navbar" role="navigation">
+            <li><a href="index.html" role="link">Inicio</a></li>
+            <li><a href="categorias.html" role="link">Categorias</a></li>
+            <li><a href="categorias.html" role="link">Cursos</a></li>
+            <li id="loginb" role="link"><a href="login.html">Login</a></li>
         </ul>
 
         <div class="header-icons">
-            <a href="#"><box-icon name='user'><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-heart'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir al perfil"><box-icon name='user'><i class='bx bx-user'></i></a>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir a cursos favoritos"><i class='bx bx-heart'></i></a>
+            <a href="#"><i class='bx bx-cart' role="link" aria-label="carrito"></i></a>
+            <div class="bx bx-menu" id="menu-icon" tabindex="0" role="link" aria-label="menu"></div>
         </div>
     </header>
 
-    <section class="container forms">
+    <section class="container forms" role="form" aria-label="formulario de Registro">
         <div class="form login">
             <div class="form-content">
                 <form action="#">
@@ -50,12 +50,12 @@
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
+                        <input type="password" placeholder="Contraseña" class="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
                     <div class="form-link">
-                        <a href="#" class="forgot-pass">Forgot password?</a>
+                        <a href="#" class="forgot-pass">¿Olvidó su Contraseña?</a>
                     </div>
 
                     <div class="field button-field">
@@ -64,7 +64,7 @@
                 </form>
 
                 <div class="form-link">
-                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    <span >¿No tiene cuenta aún? Registrese <a href="#" class="link signup-link">Registro</a></span>
                 </div>
             </div>
 
@@ -73,7 +73,7 @@
             <div class="media-options">
                 <a href="#" class="field facebook">
                     <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
+                    <span>Iniciar Sesión con Facebook</span>
                 </a>
             </div>
 
@@ -89,21 +89,21 @@
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Create password" class="password">
+                        <input type="password" placeholder="Crear Contraseña" class="password">
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Confirm password" class="password">
+                        <input type="password" placeholder="Confirmar Contraseña" class="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
                     <div class="field button-field">
-                        <button>Signup</button>
+                        <button>Registro</button>
                     </div>
                 </form>
 
                 <div class="form-link">
-                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    <span>¿Ya tiene una cuenta? <a href="#" class="link login-link">Login</a></span>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
             <div class="media-options">
                 <a href="#" class="field facebook">
                     <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
+                    <span>Registrese con Facebook</span>
                 </a>
             </div>
 
@@ -122,35 +122,35 @@
 
      <!-----------------footer-------------------------->
 
-   <section class="footer" id="footer">
-    <div class="main-footer">
-        <div class="footer-content">
-            <img src="img/img/logo.svg" alt="logo">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+     <section class="footer" id="footer" aria-label="footer">
+        <div class="main-footer">
+            <div class="footer-content">
+                <img src="img/img/logo.svg" alt="logo">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="categorias.html">Cursos</a></li>
+                <li><a href="#sobre">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <li><a href="#">Madrid,<br> España 28941</a></li>
+                <li><a href="#">contacto@learnify.com</a></li>
+                <li><a href="#">+34 661148009</a></li>
+            </div>
         </div>
-
-        <div class="footer-content">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li><a href="categorias.html">Cursos</a></li>
-            <li><a href="#sobre">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    
+        <div class="last-text">
+            <p>© 2023 Learnify. All rights reserved.</p>
         </div>
-
-        <div class="footer-content">
-            <li><a href="#">Madrid,<br> España 28941</a></li>
-            <li><a href="#">contacto@learnify.com</a></li>
-            <li><a href="#">+34 661148009</a></li>
-        </div>
-    </div>
-
-    <div class="last-text">
-        <p>© 2023 Learnify. All rights reserved.</p>
-    </div>
-
-   </section>
+    
+       </section>
     <script src="js/login.js"></script>
 </body>
 

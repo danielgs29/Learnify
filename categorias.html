@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -23,22 +23,22 @@
 
     <!------------- Header------------------------------>
     <header>
-        <a href="index.html" class="logo">
-            <img src="img/img/logo.svg" alt="logo">
+        <a href="index.html" class="logo" role="link">
+            <img src="img/img/logo.svg" alt="logo" role="img" aria-label="logo de la página">
         </a>
-
-        <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li><a href="curso.html">Cursos</a></li>
-            <li id="loginb"><a href="#login">Login</a></li>
+        
+        <ul class="navbar" role="navigation">
+            <li><a href="index.html" role="link">Inicio</a></li>
+            <li><a href="categorias.html" role="link">Categorias</a></li>
+            <li><a href="categorias.html" role="link">Cursos</a></li>
+            <li id="loginb" role="link"><a href="login.html">Login</a></li>
         </ul>
 
         <div class="header-icons">
-            <a href="#"><box-icon name='user'><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-heart'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir al perfil"><box-icon name='user'><i class='bx bx-user'></i></a>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir a cursos favoritos"><i class='bx bx-heart'></i></a>
+            <a href="#"><i class='bx bx-cart' role="link" aria-label="carrito"></i></a>
+            <div class="bx bx-menu" id="menu-icon" tabindex="0" role="link" aria-label="menu"></div>
         </div>
     </header>
 
@@ -108,6 +108,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="all diseño" tabindex="0">
+                        <div class="categories-content">
+                            <div class="box">
+                                <img src="img/img/cate6.png" alt="">
+                                <h3>Illustrator</h3>
+                                <p>3 cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all diseño" tabindex="0">
+                        <div class="categories-content">
+                            <div class="box">
+                                <img src="img/img/cate5.png" alt="">
+                                <h3>Photoshop</h3>
+                                <p>8 cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all Marketing" tabindex="0">
+                        <div class="categories-content">
+                            <div class="box">
+                                <img src="img/img/cate7.png" alt="">
+                                <h3>Instagram</h3>
+                                <p>2 cursos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all Marketing" tabindex="0">
+                        <div class="categories-content">
+                            <div class="box">
+                                <img src="img/img/cate8.png" alt="">
+                                <h3>Twitter</h3>
+                                <p>3 cursos</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +152,7 @@
     </div>
     </div>
 
-    <section class="footer" id="footer">
+    <section class="footer" id="footer" aria-label="footer">
         <div class="main-footer">
             <div class="footer-content">
                 <img src="img/img/logo.svg" alt="logo">
@@ -125,19 +162,11 @@
             </div>
     
             <div class="footer-content">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="categorias.html">Cursos</a></li>
                 <li><a href="#sobre">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </div>
-    
-            <div class="footer-content">
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Categorias</a></li>
             </div>
     
             <div class="footer-content">

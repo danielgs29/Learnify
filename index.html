@@ -23,49 +23,49 @@
 
     <!------------- Header------------------------------>
     <header>
-        <a href="index.html" class="logo">
-            <img src="img/img/logo.svg" alt="logo">
+        <a href="index.html" class="logo" role="link">
+            <img src="img/img/logo.svg" alt="logo" role="img" aria-label="logo de la página">
         </a>
         
-        <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li><a href="curso.html">Cursos</a></li>
-            <li id="loginb"><a href="login.html">Login</a></li>
+        <ul class="navbar" role="navigation">
+            <li><a href="index.html" role="link">Inicio</a></li>
+            <li><a href="categorias.html" role="link">Categorias</a></li>
+            <li><a href="categorias.html" role="link">Cursos</a></li>
+            <li id="loginb" role="link"><a href="login.html">Login</a></li>
         </ul>
 
         <div class="header-icons">
-            <a href="#"><box-icon name='user'><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-heart'></i></a>
-            <a href="#"><i class='bx bx-cart' ></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir al perfil"><box-icon name='user'><i class='bx bx-user'></i></a>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir a cursos favoritos"><i class='bx bx-heart'></i></a>
+            <a href="#"><i class='bx bx-cart' role="link" aria-label="carrito"></i></a>
+            <div class="bx bx-menu" id="menu-icon" tabindex="0" role="link" aria-label="menu"></div>
         </div>
     </header>
 
     <!------------Sección Inicio----------------------------------------->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h6>La Mejor Plataforma de Aprendizaje Online</h6>
+    <section class="home" id="home" role="banner" tabindex="0" aria-label="banner información sobre el sitio, plataforma de aprendizaje online">
+        <div class="home-text" tabindex="0">
+            <h6 role="heading">La Mejor Plataforma de Aprendizaje Online</h6>
             <h1>Unete a la comunidad más grande de Europa</h1>
             <p>Aprende de la mano de Learnify con
                 miles de cursos online dictados
                 por profesionales. Suscribete a nuestro newsletter Y Recibe Notificaciones</p>
             <div class="latter">
-                <form>
+                <form role="form">
                     <input type="email" placeholder="Introduce tú Email" required>
-                    <input type="submit" value="Suscribirse" required>
+                    <input type="submit" value="Suscribirse" required aria-label="suscribirse al newsletter">
                 </form>
             </div>
         </div>
         <div class="home-img">
-            <img src="img/img/hero.png">
+            <img src="img/img/hero.png" alt="mujer estudiante" role="img">
         </div>
     </section>
     <!------container------------------------------->
-    <section class="container">
+    <section class="container" aria-label="información sobre los logros de la página web">
         <div class="container-box" tabindex="0">
             <div class="container-img">
-                <img src="img/img/ic.png" alt="más de 5 mil alumnos registrados">
+                <img src="img/img/ic.png" role="img" alt="alumnos">
             </div>
             <div class="container-text">
                 <h4>+5k</h4>
@@ -75,7 +75,7 @@
 
         <div class="container-box" tabindex="0">
             <div class="container-img">
-                <img src="img/img/con2.png" alt="más de 200 cursos con certificado">
+                <img src="img/img/con2.png" role="img" alt="certificados">
             </div>
             <div class="container-text">
                 <h4>+200</h4>
@@ -85,7 +85,7 @@
 
         <div class="container-box" tabindex="0">
             <div class="container-img">
-                <img src="img/img/con3.png" alt="más de 50 profesores registrados">
+                <img src="img/img/con3.png" role="img" alt="profesores">
             </div>
             <div class="container-text">
                 <h4>+50</h4>
@@ -105,7 +105,7 @@
     </section>
 
     <!------------------------categorias------------------------->
-    <section class="categorias" id="categorias">
+    <section class="categorias" id="categorias" role="categorias" tabindex="0" aria-label="Categorias de los cursos disponibles">
         <div class="center-text">
             <h5>Categorias</h5>
             <h2>Categorias Populares</h2>
@@ -138,12 +138,12 @@
         </div>
 
         <div class="main-btn">
-            <a href="categorias.html" class="btn">Todas Las Categorias</a>
+            <a href="categorias.html" class="btn" role="button">Todas Las Categorias</a>
         </div>
     </section>
 
     <!-----------------------cursos--------------------------------->
-    <section class="courses" id="courses">
+    <section class="courses" id="courses" role="banner" aria-label="Cursos Populares">
         <div class="center-text">
             <h5>Cursos</h5>
             <h2>Descubre Cursos Populares</h2>
@@ -151,18 +151,18 @@
 
         <div class="courses-content">
             <div class="row" tabindex="0">
-                <img src="img/img/course1.jpg" alt="curso de html y css">
+                <img src="img/img/course1.jpg" role="img" alt="">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso Completo De HTML y CSS</h3>
                     <h6>05 horas 15 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true" ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true" ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{5 Reseñas}</p>
@@ -172,18 +172,18 @@
             </div>
 
             <div class="row" tabindex="0">
-                <img src="img/img/course2.jpg" alt="curso completo de javascript">
+                <img src="img/img/course2.jpg" role="img" alt="">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso Completo De JavaScript</h3>
                     <h6>05 horas 15 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#"tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#"tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true" ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star'aria-hidden="true" ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{5 Reseñas}</p>
@@ -193,18 +193,18 @@
             </div>
 
             <div class="row" tabindex="0">
-                <img src="img/img/course3.jpg" alt="">
+                <img src="img/img/course3.jpg" alt="" role="img">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso De Marketing Digital</h3>
                     <h6>04 horas 15 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true" ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{2 Reseñas}</p>
@@ -214,18 +214,18 @@
             </div>
 
             <div class="row" tabindex="0">
-                <img src="img/img/course4.jpg" alt="">
+                <img src="img/img/course4.jpg" alt="" role="img">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso De Docker</h3>
                     <h6>02 horas 15 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{1 Reseñas}</p>
@@ -235,18 +235,18 @@
             </div>
 
             <div class="row" tabindex="0">
-                <img src="img/img/course5.jpg">
+                <img src="img/img/course5.jpg" role="img" alt="">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso De Node js</h3>
                     <h6>07 horas 10 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{8 Reseñas}</p>
@@ -256,18 +256,18 @@
             </div>
 
             <div class="row" tabindex="0">
-                <img src="img/img/course1.jpg" alt="">
+                <img src="img/img/course1.jpg" alt="" role="img">
                 <div class="courses-text">
                     <h5>Gratis</h5>
                     <h3>Curso De Photoshop Avanzado</h3>
                     <h6>05 horas 15 minutos</h6>
                     <div class="rating">
                         <div class="star">
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
-                            <a href="#" tabindex="-1"><i class='bx bxs-star' ></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
+                            <a href="#" tabindex="-1"><i class='bx bxs-star' aria-hidden="true"></i></a>
                         </div>
                         <div class="review">
                             <p>{3 Reseñas}</p>
@@ -278,11 +278,11 @@
         </div>
 
         <div class="main-btn">
-            <a href="#" class="btn">Comienza Ahora</a>
+            <a href="login.html" class="btn">Comienza Ahora</a>
         </div>
     </section>
     <!--------------Cta--------------->
-    <section class="cta">
+    <section class="cta" role="banner" aria-label="Empresas que confian en Learnify">
         <div class="center-text">
             <h5>Con la Confianza de</h5>
             <h2>500+ Universidades y Empresas</h2>
@@ -290,47 +290,47 @@
 
         <div class="cta-content">
             <div class="cta-img">
-                <img src="img/img/cta1.png">
+                <img src="img/img/cta1.png" alt="" role="img">
             </div>
 
             <div class="cta-img">
-                <img src="img/img/cta2.png">
+                <img src="img/img/cta2.png" alt="" role="img">
             </div>
 
             <div class="cta-img">
-                <img src="img/img/cta3.png" >
+                <img src="img/img/cta3.png" alt="" role="img">
             </div>
 
             <div class="cta-img">
-                <img src="img/img/cta4.png">
+                <img src="img/img/cta4.png" alt="" role="img">
             </div>
 
             <div class="cta-img">
-                <img src="img/img/cta5.png" >
+                <img src="img/img/cta5.png" alt="" role="img">
             </div>
 
             <div class="cta-img">
-                <img src="img/img/cta6.png">
+                <img src="img/img/cta6.png" alt="" role="img">
             </div>
         </div>
     </section>
 
     <!----------------Enseña----------------------->
 
-    <section class="about" id="about">
+    <section class="about" id="about" role="banner" aria-label="¿Te gustaria ser profesor en la plataforma?">
 		<div class="about-img">
-			<img src="img/img/profesor.png">
+			<img src="img/img/profesor.png" role="img" alt="">
 		</div>
-		<div class="about-text">
+		<div class="about-text" tabindex="0">
 			<h2>¿Te gustaria compartir tus conocimientos? Únase a nosotros como profesor</h2>
 			<p>Podras obtener ingresos compartiendo tus conocimientos con nuestra gran comunidad!, Registrate y empieza a enseñar hoy mismo.</p>
-			<a href="#" class="btn">Registrarse Ahora</a>
+			<a href="login.html" class="btn">Registrarse Ahora</a>
 		</div>
 	</section>
 
    <!-----------------footer-------------------------->
 
-   <section class="footer" id="footer">
+   <section class="footer" id="footer" aria-label="footer">
     <div class="main-footer">
         <div class="footer-content">
             <img src="img/img/logo.svg" alt="logo">

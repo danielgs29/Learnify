@@ -28,6 +28,7 @@ function sticky(){
 //pongo el titulo del curso
     let title=document.getElementById("title");
     title.textContent=value;
+    title.tabIndex="0";
 
     cargarVideos();
 }

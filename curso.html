@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -26,37 +26,37 @@
 <body>
     <!------------- Header------------------------------>
     <header>
-        <a href="index.html" class="logo">
-            <img src="img/img/logo.svg" alt="logo">
+        <a href="index.html" class="logo" role="link">
+            <img src="img/img/logo.svg" alt="logo" role="img" aria-label="logo de la página">
         </a>
-
-        <ul class="navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="categorias.html">Categorias</a></li>
-            <li><a href="categorias.html">Cursos</a></li>
-            <li id="loginb"><a href="login.html">Login</a></li>
+        
+        <ul class="navbar" role="navigation">
+            <li><a href="index.html" role="link">Inicio</a></li>
+            <li><a href="categorias.html" role="link">Categorias</a></li>
+            <li><a href="categorias.html" role="link">Cursos</a></li>
+            <li id="loginb" role="link"><a href="login.html">Login</a></li>
         </ul>
 
         <div class="header-icons">
-            <a href="#"><box-icon name='user'><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-heart'></i></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir al perfil"><box-icon name='user'><i class='bx bx-user'></i></a>
+            <a href="#" aria-hidden="true" role="link" aria-label="ir a cursos favoritos"><i class='bx bx-heart'></i></a>
+            <a href="#"><i class='bx bx-cart' role="link" aria-label="carrito"></i></a>
+            <div class="bx bx-menu" id="menu-icon" tabindex="0" role="link" aria-label="menu"></div>
         </div>
     </header>
 
     <!-----------Reproductor---------------------->
 
     <section>
-        <h1 id="title"> Curso Completo de HTML 5 </h1>
+        <h1 id="title" role="header" tabindex="0"> Curso Completo de HTML 5 </h1>
 
-        <div class="container-v">
+        <div class="container-v" >
 
-            <div class="main-video">
+            <div class="main-video" tabindex="0" aria-label="reproductor de video">
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/QC9_8nRNNHA" controls muted frameborder="true" allowfullscreen></iframe>
                     <hr>
-                    <h3 class="title">01. Introducción a HTML</h3>
+                    <h3 class="title" role="heading" tabindex="0">01. Introducción a HTML</h3>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
 
     <!-----------------footer-------------------------->
 
-    <section class="footer" id="footer">
+    <section class="footer" id="footer" aria-label="footer">
         <div class="main-footer">
             <div class="footer-content">
                 <img src="img/img/logo.svg" alt="logo">
@@ -73,35 +73,27 @@
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Twitter</a></li>
             </div>
-
+    
             <div class="footer-content">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="categorias.html">Cursos</a></li>
                 <li><a href="#sobre">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </div>
-
-            <div class="footer-content">
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Categorias</a></li>
-            </div>
-
+    
             <div class="footer-content">
                 <li><a href="#">Madrid,<br> España 28941</a></li>
                 <li><a href="#">contacto@learnify.com</a></li>
                 <li><a href="#">+34 661148009</a></li>
             </div>
         </div>
-
+    
         <div class="last-text">
             <p>© 2023 Learnify. All rights reserved.</p>
         </div>
-
-    </section>
+    
+       </section>
 </body>
 
 </html>
