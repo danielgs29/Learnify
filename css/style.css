@@ -799,7 +799,7 @@ header.sticky{
 @media (max-width: 400px){
 	.home{
 		height: 65vh;
-        margin-bottom: 15px;
+        margin-bottom: 60px;
 	}
 }
 
