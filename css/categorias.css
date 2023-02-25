@@ -62,7 +62,7 @@
 .posts-main-container{
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
-    grid-gap: 0px;
+    grid-gap: 40px;
 }
 
 
@@ -72,6 +72,11 @@
     .posts-main-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .posts-main-container{
+        grid-gap: 0px;
+    }
+    
 
     .categories-content{
         grid-template-columns: repeat(2, 1fr);
