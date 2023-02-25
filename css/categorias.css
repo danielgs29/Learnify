@@ -68,7 +68,7 @@
 
 
 /***************/
-@media(max-width: 394px){
+@media(max-width: 454px){
     .posts-main-container{
         grid-template-columns: repeat(2, 1fr);
     }
