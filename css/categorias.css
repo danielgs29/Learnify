@@ -81,8 +81,9 @@
     .categories-content{
         grid-template-columns: repeat(2, 1fr);
     }
-    p{
-        font-weight: 200px;
+    .main-container > p{
+        
+        font-size: small;
     }
 }
 
